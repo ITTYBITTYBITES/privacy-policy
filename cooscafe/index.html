@@ -1,1 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Privacy Policy | Coo’s Joint — Idle Coffee Syndicate</title>
+  <style>
+    :root { color-scheme: light; --ink:#202235; --muted:#5c6072; --paper:#f5f3f8; --card:#fff; --navy:#171127; --violet:#38244f; --teal:#36d9d1; --gold:#ffd166; --line:#e6e1ec; --link:#075c72; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.68 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; }
+    .hero { background:linear-gradient(115deg,var(--navy),var(--violet)); color:#fff; padding:clamp(2rem,7vw,4.3rem) 1.25rem 2.4rem; border-bottom:5px solid var(--teal); }
+    .hero-inner,.page { width:min(900px,100%); margin:0 auto; }
+    .eyebrow { color:var(--teal); text-transform:uppercase; letter-spacing:.14em; font-weight:750; font-size:.76rem; }
+    h1 { margin:.3rem 0 .35rem; font-size:clamp(2rem,5vw,3rem); line-height:1.12; letter-spacing:-.03em; }
+    .subtitle { color:#e4dced; margin:0; max-width:68ch; }
+    .stamp { margin-top:1rem; color:#fff4d2; font-size:.92rem; }
+    .page { padding:1.2rem 1rem 3.5rem; }
+    .notice { border-left:5px solid #c07800; background:#fff5d9; color:#3e321a; padding:1rem 1.1rem; border-radius:8px; margin:0 0 1.2rem; }
+    .notice strong { color:#31250f; }
+    nav { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:1rem 1.15rem; margin-bottom:1rem; box-shadow:0 4px 18px #20112b0a; }
+    nav strong { display:block; margin-bottom:.4rem; }
+    nav ul { display:flex; flex-wrap:wrap; gap:.35rem 1.05rem; list-style:none; padding:0; margin:0; }
+    a { color:var(--link); text-underline-offset:3px; }
+    nav a { font-size:.92rem; }
+    section { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:clamp(1rem,3vw,1.55rem); margin:1rem 0; box-shadow:0 4px 18px #20112b08; scroll-margin-top:1rem; }
+    h2 { color:#302041; font-size:1.35rem; line-height:1.25; margin:.05rem 0 .7rem; }
+    h3 { color:#332448; font-size:1.05rem; margin:1.1rem 0 .35rem; }
+    p { margin:.45rem 0 .75rem; }
+    ul,ol { padding-left:1.35rem; margin:.4rem 0 .8rem; }
+    li { margin:.28rem 0; }
+    .callout { border-left:4px solid var(--teal); background:#eefaf9; padding:.8rem 1rem; border-radius:7px; margin:.9rem 0; }
+    .small { color:var(--muted); font-size:.92rem; }
+    code { font: .92em ui-monospace,SFMono-Regular,Consolas,monospace; background:#f0edf4; padding:.1em .35em; border-radius:4px; overflow-wrap:anywhere; }
+    .contact { background:#f8f6fb; border:1px dashed #b9afc8; padding:1rem; border-radius:10px; }
+    footer { color:var(--muted); font-size:.88rem; text-align:center; padding:1rem .5rem 2rem; }
+    @media (max-width:600px) { body { font-size:15px; } .page { padding-inline:.75rem; } section { border-radius:10px; } nav ul { display:block; columns:2; } nav li { margin:.3rem 0; } }
+    @media print { body { background:#fff; } .hero { background:#201735 !important; print-color-adjust:exact; } section,nav { box-shadow:none; break-inside:avoid; } .notice { print-color-adjust:exact; } }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Coo’s Joint · Legal</div>
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">How Coo’s Joint — Idle Coffee Syndicate handles local game saves, support messages, and information processed by optional third-party advertising services.</p>
+      <p class="stamp"><strong>Effective date:</strong> November 2, 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> November 2, 2026</p>
+    </div>
+  </header>
+  <main class="page">
+    <p class="notice"><strong>Publisher draft — complete before publishing.</strong> Replace every square-bracket placeholder and verify the final Android manifest, ad SDK version, advertising/analytics settings, consent flow, and Google Play Data safety answers. If AdMob ships, reconcile the in-game statement that currently says “no analytics” with the SDK’s actual processing. Host the completed policy at an active public HTTPS URL and link it in Play Console and in the app. This draft is not legal advice. Do not publish it unchanged.</p>
 
+    <nav aria-label="Contents">
+      <strong>On this page</strong>
+      <ul>
+        <li><a href="#overview">At a glance</a></li>
+        <li><a href="#controller">Publisher and contact</a></li>
+        <li><a href="#local-data">Local game data</a></li>
+        <li><a href="#ads">Ads and analytics</a></li>
+        <li><a href="#cookies">Identifiers and cookies</a></li>
+        <li><a href="#sharing">Sharing and retention</a></li>
+        <li><a href="#choices">Choices and rights</a></li>
+        <li><a href="#children">Adults and children</a></li>
+        <li><a href="#changes">Changes</a></li>
+      </ul>
+    </nav>
+
+    <section id="overview">
+      <h2>1. At a glance</h2>
+      <p>Coo’s Joint is a single-player Android game. Core progression is saved on the device in the app’s local save file. The game does not require a player account and does not operate a cloud-save database.</p>
+      <p>The project currently includes an AdMob integration in <strong>test mode</strong> using Google test IDs; production ad IDs are not configured. This policy describes the additional data handling that may occur if optional rewarded ads are enabled for a public release. No separate gameplay-analytics provider is currently identified in the project. If the release configuration differs, update this policy before distribution.</p>
+      <div class="callout"><strong>Important:</strong> Do not describe advertising identifiers as “non-PII.” Device identifiers, IP addresses, and usage signals can be personal data or personal information under applicable laws, even when they do not directly reveal a person’s name.</div>
+    </section>
+
+    <section id="controller">
+      <h2>2. Who operates the game</h2>
+      <p><strong>Publisher / data controller:</strong> [Publisher’s legal name] (“we,” “us,” or “our”).</p>
+      <p><strong>Privacy contact:</strong> [privacy email]<br>
+        <strong>Mailing address, if required:</strong> [Business mailing address]<br>
+        <strong>Support contact:</strong> [Support email or support URL]</p>
+      <p>Google Play distributes the game. Google may separately process information under its own terms and privacy notices. This policy covers the game publisher’s practices and describes relevant third-party SDK processing included in the app.</p>
+    </section>
+
+    <section id="local-data">
+      <h2>3. Information stored by the game</h2>
+      <h3>Local gameplay save</h3>
+      <p>The game writes its save to <code>user://coos_joint_save_v1.json</code> in Godot’s app-specific user-data area. The save can contain gameplay progress such as Star Beans and other game currencies, business ownership, managers and upgrades, settings, statistics, story/progression flags, and save timestamps.</p>
+      <p>The game code does not send this save file to a publisher-operated server or cloud-save service. The file is used on the device to restore local progress. The game does not currently provide account-based or cross-device cloud synchronization.</p>
+      <p>You can use the in-game reset control, clear the app’s storage in Android settings, or uninstall the app to remove local game data. Android system backup and restore behavior can depend on device/account settings and the final Android manifest; it is not a game-managed cloud-save feature. The publisher cannot recover a local save that has been erased or lost.</p>
+      <h3>Messages you send us</h3>
+      <p>If you email support or privacy, we receive the information you choose to send, such as your email address, message, and any diagnostic details you include. We use it to respond, troubleshoot, and keep records required for security or legal purposes. Please do not send passwords, payment-card details, or other sensitive information.</p>
+    </section>
+
+    <section id="ads">
+      <h2>4. Advertising and analytics</h2>
+      <h3>Optional rewarded ads</h3>
+      <p>If production rewarded advertising is enabled, the app may request an optional rewarded ad through Google Mobile Ads (AdMob). You choose whether to start a rewarded-ad flow. Ads may be unavailable because of network, inventory, regional, or consent settings; the game does not promise that an ad will always be available.</p>
+      <p>Google’s published Android data-disclosure guidance for Google Mobile Ads describes automatic collection/sharing that can include an IP address (which may be used to estimate general location), product interactions such as app launches, taps, and video views, diagnostic information, and device/account identifiers such as the Android advertising ID or App Set ID. The exact data and purposes depend on the SDK version, app configuration, ad partners, region, and user choices. These providers may use data for ad delivery, measurement, analytics, security, and fraud prevention.</p>
+      <p>The current project uses Google test IDs and <code>is_real=false</code>; those are development settings, not production ad credentials. Before release, the publisher must verify the exact SDK and mediation versions and update this policy and the Play Console Data safety form to match them. If ads are removed, revise this section to describe the shipped configuration instead.</p>
+      <h3>Gameplay analytics / telemetry</h3>
+      <p>No separate gameplay analytics service is currently identified in the project configuration. If we add analytics or telemetry, we will update this policy to name the provider, explain the information collected and purposes, and update applicable consent and store disclosures before enabling it.</p>
+    </section>
+
+    <section id="cookies">
+      <h2>5. Device identifiers, cookies, and similar technologies</h2>
+      <p>The native core game does not operate a first-party website or use browser cookies for gameplay. Advertising SDKs or ad content may use advertising/device identifiers, SDK storage, cookies, or similar technologies to deliver and measure ads, prevent fraud, and remember privacy choices. Some identifiers or network signals may be treated as personal data under applicable law.</p>
+      <p>You can review or reset Android advertising-ID controls in your device settings and manage Google advertising settings through Google’s account tools. These controls do not replace any consent or opt-out rights that apply under local law. Where required, the production app must present an appropriate consent/privacy-choice flow before the relevant ad processing occurs and provide a way to revisit choices; the publisher must confirm that flow is implemented in the release build.</p>
+    </section>
+
+    <section id="sharing">
+      <h2>6. How information is used, shared, and retained</h2>
+      <ul>
+        <li><strong>Local game data:</strong> used on your device to save and restore progress; not sent to us by the game code.</li>
+        <li><strong>Advertising providers:</strong> if enabled, Google Mobile Ads and any configured mediation/ad partners may receive information from their SDKs to provide, measure, secure, or improve ad services, subject to their terms, settings, and applicable privacy choices.</li>
+        <li><strong>Support:</strong> messages are used to reply and address the issue.</li>
+        <li><strong>Legal and safety reasons:</strong> information may be disclosed if required by law or reasonably necessary to protect users, the service, or legal rights.</li>
+      </ul>
+      <h3>Legal bases, where applicable</h3>
+      <p>The legal basis depends on where you live and the final feature/SDK configuration. It may include consent for personalized advertising or non-essential storage where required, legitimate interests for support, service security, and fraud prevention, and compliance with legal obligations. The publisher must confirm the applicable basis and implement the corresponding consent or opt-out flow before enabling production ad processing.</p>
+      <p>We do not operate an account database or sell the local save file. We do not receive local save data through the game. Third-party advertising processing is governed in part by the provider’s own privacy practices; it is not accurately described as “no data collection” merely because the game has no account or cloud save.</p>
+      <p>The local save remains until it is reset, app storage is cleared, or the app is removed, subject to Android backup behavior described above. Support correspondence is retained only as reasonably needed to resolve the request, maintain security records, and meet legal obligations. Ad/analytics providers apply their own retention periods; consult their current notices for details.</p>
+      <p>Some providers may process information in countries other than the one where you live. Any such processing is subject to the provider’s safeguards and applicable law.</p>
+    </section>
+
+    <section id="choices">
+      <h2>7. Your choices and privacy rights</h2>
+      <p>You may clear local game data using the in-game reset feature or Android app-storage controls. The game has no player account, so there is no account profile to close. For personal information handled by us through support, contact the privacy address above to request access, correction, deletion, restriction, or other rights available in your location. We may need to verify a request and may retain information where the law permits or requires it.</p>
+      <p>Depending on your location and the final ad configuration, you may also have rights to object to or opt out of targeted advertising, sale/sharing, or certain processing. We will provide the required in-app privacy options or consent controls for the release configuration and honor valid choices. Where you live in the EEA, UK, or another region with consent requirements, personalized advertising must not be enabled before the required consent is obtained. Contact us if you cannot find or use a privacy control.</p>
+    </section>
+
+    <section id="children">
+      <h2>8. Adults and children’s privacy</h2>
+      <p>Coo’s Joint is intended for adults aged <strong>18 and older</strong> and is not designed or marketed to children. The app does not currently verify a player’s age; an 18+ intended audience is not itself an age-verification mechanism. If you are under 18, do not use the game.</p>
+      <p>We do not knowingly solicit personal information from children under 13. If you believe a child under 13 has sent personal information to us, contact the privacy email listed below; we will review the request and take appropriate steps. Before release, the publisher must make the Play Console target-audience, content-rating, and ad settings consistent with the actual game and this 18+ audience statement.</p>
+    </section>
+
+    <section id="security">
+      <h2>9. Security</h2>
+      <p>The save is kept in the app-specific storage area provided by Android/Godot. The game does not currently describe the local JSON save as encrypted. No method of storage or transmission is perfectly secure. Third-party services apply their own safeguards; consult their current documentation for details.</p>
+    </section>
+
+    <section id="changes">
+      <h2>10. Changes to this policy</h2>
+      <p>We may update this policy when the game, SDKs, legal requirements, or data practices change. We will update the “Last updated” date and, where required, provide additional notice or request consent. Continued use after an effective update is subject to applicable law and any consent requirements.</p>
+    </section>
+
+    <section id="contact">
+      <h2>11. Contact</h2>
+      <div class="contact">
+        <p><strong>[Publisher’s legal name]</strong><br>
+          Privacy: [privacy email]<br>
+          Support: [Support email or URL]<br>
+          Address: [Business mailing address, if required]</p>
+      </div>
+      <p class="small">Related document: <a href="TERMS_OF_SERVICE.html">Terms of Service and End User License Agreement</a>.</p>
+    </section>
+
+    <section>
+      <h2>Third-party privacy references</h2>
+      <ul>
+        <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+        <li><a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google Mobile Ads SDK — Android data disclosure</a></li>
+        <li><a href="https://support.google.com/googleplay/android-developer/answer/10787469?hl=en">Google Play Data safety requirements</a></li>
+      </ul>
+      <p class="small">Google’s SDK disclosures can change. Confirm the disclosure for the exact SDK/version and mediation partners included in the released app.</p>
+    </section>
+
+    <footer>© 2026 [Publisher’s legal name]. Coo’s Joint — Idle Coffee Syndicate.</footer>
+  </main>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a543da4108138fab',t:'MTc5MzYyOTk4OA=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a543da4108138fab',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
